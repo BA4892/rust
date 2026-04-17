@@ -1,13 +1,13 @@
 #!/bin/sh
-# Rust 1.89.0 HarmonyOS 一键安装脚本
-# 用法: /bin/sh -c "$(curl -fsSL https://gitcode.com/OpenHarmonyPCDeveloper/ohos-rust-release/releases/download/v1.89.0/install.sh)"
+# Rust 1.95.0 HarmonyOS 一键安装脚本
+# 用法: /bin/sh -c "$(curl -fsSL https://gitcode.com/OpenHarmonyPCDeveloper/ohos-rust-release/releases/download/v1.95.0/install.sh)"
 
 # ── 配置 ──────────────────────────────────────────────
-RUST_VERSION="1.89.0"
+RUST_VERSION="1.95.0"
 ARCH="aarch64-unknown-linux-ohos"
 PACKAGE_NAME="rust-${RUST_VERSION}-${ARCH}"
 INSTALL_DIR="$HOME/usr/${PACKAGE_NAME}"
-RELEASE_TAG="v1.89.0"
+RELEASE_TAG="v1.95.0"
 DOWNLOAD_URL="https://gitcode.com/OpenHarmonyPCDeveloper/rust/releases/download/${RELEASE_TAG}/${PACKAGE_NAME}.tar.gz"
 MARKER="# >>> Rust ${RUST_VERSION} HarmonyOS >>>"
 MARKER_END="# <<< Rust ${RUST_VERSION} HarmonyOS <<<"

@@ -1,0 +1,20 @@
+# Release artifacts (manually uploaded to GitCode releases)
+*.tar.gz
+*.tar.xz
+*.tgz
+rust-*-ohos-*/
+!rust-*/
+
+# Debug symbols
+debug/
+
+# Rust build artifacts
+target/
+Cargo.lock
+*.rlib
+*.rmeta
+*.so
+*.dylib
+*.dll
+
+tmp/

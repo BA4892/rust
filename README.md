@@ -1,12 +1,12 @@
-# Rust 1.89.0 — HarmonyOS 移植版
+# Rust 1.95.0 — HarmonyOS 移植版
 
-面向 HarmonyOS PC（aarch64）的 Rust 1.89.0 预编译包，基于 musl libc + Clang 工具链构建。
+面向 HarmonyOS PC（aarch64）的 Rust 1.95.0 预编译包，基于 musl libc + Clang 工具链构建。
 
 ## 版本信息
 
 | 项目 | 值 |
 |------|------|
-| Rust 版本 | 1.89.0 |
+| Rust 版本 | 1.95.0 |
 | 构建系统 | rustbuild (x.py dist) |
 | 适配状态 | ✅ 核心功能可用 |
 | 内置工具 | rustc, cargo, rustdoc, rustfmt, clippy, rust-analyzer |
@@ -30,13 +30,13 @@
 
 | 补丁 | 说明 |
 |------|------|
-| `0001-rustc-ohos-auto-sign-fix-1.89.0.patch` | 平台识别（`aarch64-unknown-linux-ohos`）、ELF 自动签名、链接器配置 |
+| `0001-rustc-ohos-auto-sign-fix.patch` | 平台识别（`aarch64-unknown-linux-ohos`）、ELF 自动签名、链接器配置 |
 
 ## 预编译包
 
 | 文件 | 大小 | 说明 |
 |------|------|------|
-| `rust-1.89.0-aarch64-unknown-linux-ohos.tar.gz` | ~220 MB | 主包（stripped，即装即用） |
+| `rust-1.95.0-aarch64-unknown-linux-ohos.tar.gz` | ~220 MB | 主包（stripped，即装即用） |
 
 ## 使用注意项
 
@@ -47,7 +47,7 @@
 
 ```bash
 # 一键安装
-/bin/sh -c "$(curl -fsSL https://gitcode.com/OpenHarmonyPCDeveloper/rust/releases/download/v1.89.0/install.sh)"
+/bin/sh -c "$(curl -fsSL https://gitcode.com/OpenHarmonyPCDeveloper/rust/releases/download/v1.95.0/install.sh)"
 
 # 使配置生效
 source ~/.zshrc
@@ -55,10 +55,10 @@ source ~/.bashrc
 
 # 验证
 rustc --version
-# rustc 1.89.0
+# rustc 1.95.0
 
 cargo --version
-# cargo 1.89.0
+# cargo 1.95.0
 
 # 创建项目
 cargo new hello && cd hello && cargo run

@@ -95,6 +95,10 @@ cargo new hello && cd hello && cargo run
 
 参见 [docs/cross-compilation/README.md](docs/cross-compilation/README.md)，包含完整配置步骤。
 
+**Q: 开发鸿蒙应用时如何使用 Rust 与 ArkTS 互操作？**
+
+参见 [docs/ohos-napi-usage/README.md](docs/ohos-napi-usage/README.md)，了解如何通过 NAPI 实现 Rust 与 ArkTS 的互操作。
+
 ---
 
 ## 许可证
